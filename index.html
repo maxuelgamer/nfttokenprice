@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html id="html" lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação</title>
+    <link rel = "icon" href = "https://icons.iconarchive.com/icons/flat-icons.com/flat/512/Clock-icon.png" type = "image/x-icon">
+
+<link rel="stylesheet" href="style.css"></head>
+<body onload="usdbrl(), getCoinPrices()">
+    <script src="script.js"></script>
+    <header>
+        <h1>Cotação</h1>
+    </header>
+    
+    <div id="currencyoption">
+        <select onchange="changecurrency(), getCoinPrices()" name="currency" id="currency">
+            <option value="usd">USD</option>
+            <option value="brl">BRL</option>
+        </select>
+    </div>
+    <div id="center">
+        <div class="grid-container">
+            <section class="grid-item">
+                <a id="msg" href="https://poocoin.app/tokens/0x31471e0791fcdbe82fbf4c44943255e923f1b794">
+                    <img src="https://d235dzzkn2ryki.cloudfront.net/plant-vs-undead-token_large.png" width="45" height="45" alt="Pvu Icon">
+                </a>
+                <div id="precopvu" class="prices">
+                </div>
+            </section>
+            <section class="grid-item">
+                <a id="msg" href="https://poocoin.app/tokens/0x00e1656e45f18ec6747f5a8496fd39b50b38396d">
+                    <img src="https://r.poocoin.app/smartchain/assets/0x00e1656e45f18ec6747F5a8496Fd39B50b38396D/logo.png" width="45" height="45" alt="Bcoin Icon">
+                </a>
+                <div id="precobcoin" class="prices">
+                </div>
+            </section>
+            <section class="grid-item">
+                <a id="msg" href="https://poocoin.app/tokens/0x50332bdca94673f33401776365b66cc4e81ac81d">
+                    <img src="https://cryptocars.me/img/CCAR.png" width="45" height="45" alt="Ccar Icon">
+                </a>
+                <div id="precoccar" class="prices">
+                </div>
+            </section>
+            <section class="grid-item">
+                <a id="msg" href="https://poocoin.app/tokens/0x04260673729c5f2b9894a467736f3d85f8d34fc8">
+                    <img src="https://cryptoplanes.me/icon.png" width="45" height="45" alt="Cpan Icon">
+                </a>
+                <div id="precocpan" class="prices">
+                </div>
+            </section>
+            <section class="grid-item" class="prices">
+                <a id="msg" href="https://poocoin.app/tokens/0x12fc07081fab7de60987cad8e8dc407b606fb2f8">
+                    <img src="https://assets.coingecko.com/coins/images/18856/large/dark.png?1633597226" width="45" height="45" alt="Dark Icon">
+                </a>
+                <div id="precodark" class="prices">
+                </div>
+            </section>
+            <section class="grid-item">
+                <a id="msg" href="https://poocoin.app/tokens/0x66109633715d2110dda791e64a7b2afadb517abb">
+                    <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/10861.png" width="45" height="45" alt="Game Icon">
+                </a>
+                <div id="precogame" class="prices">
+                </div>
+            </section>
+
+        </div>    
+    </div>
+    <footer>
+        <a id="github" target="_blank" href="https://github.com/maxuelgamer/">&copy; Maxuel</a>
+    </footer>
+</body>
+</html>

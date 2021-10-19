@@ -1,0 +1,83 @@
+html {
+    background: rgb(37, 37, 37);
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: bebas;
+    src: url(font/BebasNeue-Regular.ttf);
+  }
+
+body {
+    font: normal 15pt bebas;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
+}
+
+header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#currencyoption {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+#center {
+    display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 3px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
+}
+
+.prices {
+    font: normal 20pt bebas;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+#github {
+    bottom: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#github:hover {
+    color: rgb(0, 202, 0);
+    text-decoration: underline;
+}
+
+#github:active {
+    color: white;
+}
