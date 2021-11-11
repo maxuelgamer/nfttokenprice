@@ -84,6 +84,17 @@ const getCoinPrices = () => {
             else
                 precogame.innerHTML = `R$${(gameprice*usdprice).toFixed(2)}`
         })
+    const protapi = `https://api.pancakeswap.info/api/v2/tokens/0xd3c9609b6cbc6ef02390f33c230590c38f9e5f9d`
+    var precoprot = document.getElementById('precoprot')
+    fetch(protapi)
+        .then(response => response.json())
+        .then(preco => {
+            protprice = parseFloat(preco.data.price)
+            if (currency == "usd") 
+                precoprot.innerHTML = `$${protprice.toFixed(2)}`
+            else
+                precoprot.innerHTML = `R$${(protprice*usdprice).toFixed(2)}`
+        })
         
 }
 
