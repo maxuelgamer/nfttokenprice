@@ -95,6 +95,17 @@ const getCoinPrices = () => {
             else
                 precoprot.innerHTML = `R$${(protprice*usdprice).toFixed(2)}`
         })
+    const eternalapi = `https://api.pancakeswap.info/api/v2/tokens/0xd44fd09d74cd13838f137b590497595d6b3feea4`
+    var precoeternal = document.getElementById('precoeternal')
+    fetch(eternalapi)
+        .then(response => response.json())
+        .then(preco => {
+            eternalprice = parseFloat(preco.data.price)
+            if (currency == "usd") 
+                precoeternal.innerHTML = `$${eternalprice.toFixed(2)}`
+            else
+                precoeternal.innerHTML = `R$${(eternalprice*usdprice).toFixed(2)}`
+        })
         
 }
 
